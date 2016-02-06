@@ -2,22 +2,22 @@ QuestionNumber: 10 # set this to how many questions you want it to ask before qu
 QDB: # make sure the question count is equal (then you will have the same questions every time) or larger than the question number, or it will most likely break
   1:
     question: Who are you?
-    A: A panda
-    B: Your neighbor
-    C: Myself
-    D: Saint Patrick
+    A: "A panda"
+    B: "Your neighbor"
+    C: "Myself"
+    D: "Saint Patrick"
     correct: C
   2:
     question: Which of the following countries is in America?
-    A: Iceland
-    B: Denmark
-    C: Brazil
-    D: Kazakhstan
+    A: "Iceland"
+    B: "Denmark"
+    C: "Brazil"
+    D: "Kazakhstan"
     correct: C
   3:
     question: What is the current year?
-    A: "2014" # remember to put the answers in quotes if they're just a number, otherwise it will break
+    A: "2014"
     B: "1976"
     C: "149"
-    D: 52 B.C. # you don't have to if there are other characters in it too
+    D: "52 B.C."
     correct: A
