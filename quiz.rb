@@ -2,8 +2,6 @@
 
 require 'yaml'
 
-system "clear"
-
 #stuff
 $UNDERLINE = "\e[4m"
 $GREEN = "\e[37m\e[42m"
@@ -17,6 +15,12 @@ $QuestionCount = 0
 $questions = Hash.new
 $showncorrect = Hash.new
 
+if $QuestionNumber > $QDB.length
+  puts "Error: QuestionNumber is larger than the number of questions in the configuration."
+  exit
+else
+  system "clear"
+end
 
 def question
   $cmd = ""
@@ -68,7 +72,7 @@ until $cmd == "start"
   $cmd = gets.chomp.downcase
 end
 until $QuestionCount == $QuestionNumber
-  sleep(3)
-  question()
+  sleep 3
+  question
 end
 exit

@@ -1,5 +1,5 @@
 QuestionNumber: 10 # set this to how many questions you want it to ask before quitting
-QDB: # make sure the question count is equal (then you will have the same questions every time) or larger than the question number, or it will most likely break
+QDB: # make sure the question count is equal (then you will have the same questions every time) or larger than the question number, or it will not work
   1:
     question: Who are you?
     A: "A panda"
@@ -16,7 +16,7 @@ QDB: # make sure the question count is equal (then you will have the same questi
     correct: C
   3:
     question: What is the current year?
-    A: "2014"
+    A: "2016"
     B: "1976"
     C: "149"
     D: "52 B.C."
